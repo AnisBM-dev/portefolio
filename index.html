@@ -1,96 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-     ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #484848;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-li{
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-/* Change the link color to #111 (black) on hover */
-li :hover {
-  background-color: #007d15;
-}
-h4{
-  color: aliceblue;
-}
-
-footer{
-    background-color: #000000;
-    margin: 0px;
-    padding: 50px;
-}
-    </style>
 </head>
+
 <body>
-    
-    <header style="background-color:black; border: 0px;
-    padding: 0px;margin: 0;display: block;"
-    >
-        <h1 >
-          <div style="color: orangered;">My </div>
-          <div style="color:orange">Portfolio</div>
-        </h1><!--big title of the page-->
-        <ul>
-            <li><a href="#home" style="color: aliceblue;">Home</a></li>
-            <li><a href="#profile" style="color: aliceblue;">Profile</a></li>
-            <li><a href="#skills" style="color: aliceblue;">Skills</a></li>
-            <li><a href="#contact" style="color: aliceblue;">Contact</a></li>
-          </ul></header>    
-        <img src="./img/photo de profile.jpg" alt="./img/photo de profile.jpg"
-        style="width: 100px;
-        margin: 50px 0px 0px 10px;" >
-        <a name="profile">
-        <table border="5"  bordercolor="black" > 
-          <h3 style="font-size:100% ; background-color: rgb(0, 0, 0) ; width:25%">
-          <tr><td ><p style="color:rgb(158, 0, 0); ; width:100%"> <u>Name : </u> </p></td><td><p style="color:rgb(0, 0, 0)" >Mohamed Anis</p></td></tr>
-          <tr><td><p style=" color:rgb(158, 0, 0) ; width:100%"><u> Family Name</u></p> </td><td> <p style="color:rgb(0, 0, 0)" > Belghazi</p></td></tr>
-          <tr><td> <p style= "color:rgb(158, 0, 0) ; width:100%"><u> Date of birth</u></p></td><td><p style="color:rgb(0, 0, 0)" >2005/09/03</p></td></tr>
-          <tr><td><p style=" color:rgb(158, 0, 0) ; width:100%"><u> Current academic year :</u></p></td><td><p style="color:rgb(0, 0, 0)" > L2 ISIL</p></td></tr>
-          
-          </table></a>
-          <a name="skills"><H3 ><p><b><u><i>SKILLS</i></u></b></p></H3>  </a>
-          <p>- Creation frontend web page</p>
-          <p>- Photography such as bird photography, landscape Photography</p>
-          <p>- Coding with C and Java</p>
-          </ol>
-          
-          <H3 ><p><b><u><i>My Lovely University</i></u></b></p></H3>
-        <!--autoplay pour la lecture automarique
+  <div class="nbar">
+    <header id="page">
+      <h1>
+        <div style="color: orangered;">My </div>
+        <div style="color:orange">Portfolio</div>
+      </h1><!--big title of the page-->
+      <ul>
+        <li><a href="#home">
+            Home</a></li>
+        <li><a href="#profile">
+            Profile</a></li>
+        <li><a href="#skills">
+            Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+  </div>
+  <div id="a1"><img src="./img/photo_de_profile.png" alt="./img/photo_de_profile.png" id="photo">
+
+
+    <a name="profile">
+      <div class="Main">
+        <h1>Belghazi Mohamed Anis</h1>
+        <h3>19 years old</h3>
+        <h3>Information System and Softwere Ingenieer</h3>
+      </div>
+  </div></a>
+
+  <a name="skills">
+    <H3 style="color: yellow;margin-left: 10px;">
+      <p><b><u><i>SKILLS</i></u></b></p>
+    </H3>
+  </a>
+  <div class="skill">
+    <div class="partage"><img src="./img/téléchargement (2).jpeg" alt="./img/téléchargement (2).jpeg" width="600"
+        height="400" class="pic">
+      <div class="desc">
+        <h3> <u>Creation frontend web page</u></h3>
+      </div>
+    </div>
+  </div>
+  <div class="skill">
+    <div class="partage"><a target="_blank" href="./img/téléchargement.jpeg"></a>
+      <img src="./img/téléchargement.jpeg" alt="./img/téléchargement.jpeg" width="600" height="400" class="pic">
+      <div class="desc">
+        <h3><u>Photography </u></h3>
+      </div>
+    </div>
+  </div>
+  <div class="skill">
+    <div class="partage">
+      <img src="./img/téléchargement (1).jpeg" alt="./img/téléchargement (1).jpeg" width="600" height="400" class="pic">
+      <div class="desc">
+        <h3> <u>Coding with C and Java</u></h3>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <H3 style="color: yellow;margin-left: 10px;">
+    <p><b><u><i>My Lovely University</i></u></b></p>
+  </H3>
+  <!--autoplay pour la lecture automarique
         muted pour désactiver le son 
         loop pour la lécture en boucle-->
-          <video style="width: 500px;"
-        autoplay
-        muted
-        loop
-        src="./img/usthb.mp4">
-        </video>
-        <audio src="./img/song.mp3"
-        autoplay
-        loop
-        ></audio>
-        <footer ><a name="contact"></a>
-        <h4 >Gmail: anis40610@gmail.com</h4>
-        <h4>Phone number : 0791300127</h4>
-        <h4>Adress : 01Bis road El Idrissi</h4>
-        <form action="" class="form">
-          <input required="" class="input" type="search"  placeholder="type to search">
-          <input class="search" type="submit" value="search">
-          </div>
-         </form>
-        </footer>
+  <div id="video1"><video autoplay muted loop src="./img/usthb.mp4">
+    </video></div>
+  <br>
+  <audio src="./img/song.mp3" autoplay loop muted></audio></div>
+  <footer><a name="contact"></a>
+    <h4>Gmail: anis40610@gmail.com</h4>
+    <h4>Phone number : 0791300127</h4>
+    <h4> Adress: 01Bis road El Idrissi</h4>
+    <form action="" class="form">
+      <input required="" class="input" type="search" placeholder="type to search">
+      <input class="search" type="submit" value="search">
+
+    </form>
+  </footer>
+  </div>
 </body>
+
 </html>
